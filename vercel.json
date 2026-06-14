@@ -3,6 +3,14 @@
     {
       "source": "/offer",
       "destination": "/offer.html"
+    },
+    {
+      "source": "/book-website",
+      "destination": "/book-website.html"
+    },
+    {
+      "source": "/book-audit",
+      "destination": "/book-audit.html"
     }
   ]
 }
