@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pimp My Website™ Offer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#0e0d0b;
+  --card:#171614;
+  --card2:#201f1d;
+  --ink:#080706;
+  --cream:#e6e1d4;
+  --cream-dim:#b4b1a8;
+  --cream-hi:#f2eee3;
+  --red:#db3330;
+  --red-dark:#b2201d;
+  --gold:#cca641;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{
+  background:
+    radial-gradient(circle at top, rgba(204,166,65,.12), transparent 34%),
+    radial-gradient(circle at 80% 20%, rgba(219,51,48,.12), transparent 28%),
+    var(--bg);
+  color:var(--cream);
+  font-family:'Inter',system-ui,sans-serif;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1100px;margin:0 auto;padding:48px 20px 72px}
+.eyebrow{font-family:'Permanent Marker',cursive;color:var(--gold);margin:0 0 14px}
+.display{font-family:'Anton',Impact,sans-serif;text-transform:uppercase;line-height:1;letter-spacing:.01em;margin:0}
+.grid{display:grid;gap:20px}
+@media(min-width:900px){.grid{grid-template-columns:1.1fr .9fr}}
+.hero,.panel{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)), var(--card);border:1px solid rgba(230,225,212,.14);box-shadow:8px 8px 0 var(--ink)}
+.hero{padding:34px}
+.panel{padding:26px}
+.price{
+  display:inline-block;
+  background:var(--red);
+  color:var(--cream-hi);
+  border:2px solid var(--ink);
+  box-shadow:5px 5px 0 var(--ink);
+  padding:12px 18px;
+  font-family:'Anton',Impact,sans-serif;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  cursor:pointer;
+  background:var(--red);
+  color:var(--cream-hi);
+  border:2px solid var(--ink);
+  box-shadow:5px 5px 0 var(--ink);
+  padding:16px 24px;
+  font-family:'Anton',Impact,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  transition:transform .12s,box-shadow .12s,background .12s;
+}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink);background:var(--red-dark)}
+.btn.secondary{background:transparent;color:var(--cream)}
+.btn.secondary:hover{background:transparent}
+.muted{color:var(--cream-dim)}
+.list{padding-left:18px;margin:18px 0 0}
+.list li{margin:10px 0}
+.callout{background:var(--card2);border-left:4px solid var(--gold);padding:18px 20px;margin-top:22px}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:24px}
+.small{font-size:14px}
+h1.hero{font-size:clamp(44px,8vw,78px);margin:18px 0 18px}
+p{font-size:18px}
+.embed{
+  margin-top:16px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(230,225,212,.12);
+  padding:14px;
+}
+.section{margin-top:28px}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="grid">
+      <section class="hero">
+        <p class="eyebrow">Pimp My Website™ · Offer Page</p>
+        <span class="price">One page. One week. $300.</span>
+        <h1 class="display hero">Get the FRESH rebuild</h1>
+        <p style="max-width:60ch">
+          The next step is simple: pay for the site, then schedule your discovery call.
+          GHL can keep handling the lead workflow while Vercel controls the page design.
+        </p>
+        <div class="callout">
+          <strong>What happens next:</strong>
+          <ol class="list">
+            <li>Pay for the offer</li>
+            <li>Book your discovery call</li>
+            <li>We build the page and keep GHL handling the workflow</li>
+          </ol>
+        </div>
+        <div class="section">
+          <p class="eyebrow">Website Offer</p>
+          <p><strong>Payment:</strong> $300 website build</p>
+          <div class="row">
+            <a class="btn" href="https://buy.stripe.com/00wdR8eMTeXOaP7fwV5os02" target="_blank" rel="noopener noreferrer">Pay Website Offer</a>
+          </div>
+          <div class="embed">
+            <iframe src="https://api.growthhub365.com/widget/booking/lpUP2Dq5oAuxq58CCsRM" style="width:100%;border:none;overflow:hidden;min-height:760px" scrolling="no" id="lpUP2Dq5oAuxq58CCsRM_1781418875430"></iframe>
+            <br />
+          </div>
+        </div>
+
+        <div class="section">
+          <p class="eyebrow">Fresh Website Audit</p>
+          <p><strong>Payment:</strong> audit + discovery call</p>
+          <div class="row">
+            <a class="btn" href="https://buy.stripe.com/eVq14mbAH02Ug9racB5os03" target="_blank" rel="noopener noreferrer">Pay Audit Fee</a>
+          </div>
+          <div class="embed">
+            <iframe src="https://api.growthhub365.com/widget/booking/eRkXERm9PN3GOy5iVbWB" style="width:100%;border:none;overflow:hidden;min-height:760px" scrolling="no" id="eRkXERm9PN3GOy5iVbWB_1781418793712"></iframe>
+            <br />
+          </div>
+        </div>
+      </section>
+      <aside class="panel">
+        <p class="eyebrow">What’s included</p>
+        <ul class="list">
+          <li>A focused offer page that avoids GHL CSS conflicts</li>
+          <li>Clear payment and scheduling flow</li>
+          <li>Brand-aligned layout for the FRESH™ offer</li>
+          <li>Lead capture stays in GHL, where it already works</li>
+        </ul>
+        <div class="callout">
+          <strong>Routing note:</strong>
+          <p class="small muted" style="margin:10px 0 0">
+            If you want only one offer on this page, tell me which one should be primary and I’ll simplify the layout.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script src="https://api.growthhub365.com/js/form_embed.js" type="text/javascript"></script>
+</body>
+</html>

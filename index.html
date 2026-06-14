@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The FRESH™ Check · Pimp My Website™</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#0e0d0b;
+  --card:#171614;
+  --card-alt:#201f1d;
+  --ink:#080706;
+  --cream:#e6e1d4;
+  --cream-dim:#b4b1a8;
+  --cream-hi:#f2eee3;
+  --red:#db3330;
+  --red-dark:#b2201d;
+  --gold:#cca641;
+  --fresh:#5bae7c;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{
+  background:
+    radial-gradient(circle at top, rgba(204,166,65,.12), transparent 34%),
+    radial-gradient(circle at 80% 20%, rgba(219,51,48,.12), transparent 28%),
+    var(--bg);
+  color:var(--cream);
+  font-family:'Inter',system-ui,sans-serif;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto;padding:56px 20px 72px}
+.eyebrow{font-family:'Permanent Marker',cursive;color:var(--gold);margin:0 0 14px}
+.display{font-family:'Anton',Impact,sans-serif;text-transform:uppercase;line-height:1.02;letter-spacing:.01em;margin:0}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)), var(--card);
+  border:1px solid rgba(230,225,212,.14);
+  box-shadow:8px 8px 0 var(--ink);
+  padding:28px;
+}
+.hero{padding:36px}
+.dim{color:var(--cream-dim)}
+.btn{
+  display:inline-block;
+  background:var(--red);
+  color:var(--cream-hi);
+  border:2px solid var(--ink);
+  box-shadow:5px 5px 0 var(--ink);
+  padding:16px 30px;
+  text-decoration:none;
+  font-family:'Anton',Impact,sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  transition:transform .12s,box-shadow .12s,background .12s;
+}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink);background:var(--red-dark)}
+.btn.secondary{background:transparent;color:var(--cream);margin-left:10px}
+.btn.secondary:hover{background:transparent}
+.callout{
+  margin-top:24px;
+  padding:18px 20px;
+  background:rgba(255,255,255,.03);
+  border-left:4px solid var(--gold);
+}
+.list{padding-left:20px;margin:14px 0 0}
+.list li{margin:10px 0}
+.pill{
+  display:inline-block;
+  background:rgba(204,166,65,.12);
+  color:var(--gold);
+  border:1px solid rgba(204,166,65,.28);
+  padding:8px 12px;
+  font-size:13px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  font-weight:700;
+}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+h1.hero{
+  font-size:clamp(48px,10vw,82px);
+  margin:16px 0 18px;
+}
+p{font-size:18px}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card hero">
+      <p class="eyebrow">Pimp My Website™ · The FRESH™ Check</p>
+      <span class="pill">One page. One week. $300.</span>
+      <h1 class="display hero">Is your website fresh, or just sitting there?</h1>
+      <p style="max-width:58ch">
+        The button below sends visitors to the offer page where they can pay for the rebuild and schedule the discovery call.
+        GHL can keep handling the workflow after the lead is captured.
+      </p>
+      <div class="row">
+        <a class="btn" href="/offer">Run The FRESH Check</a>
+        <a class="btn secondary" href="/offer">View Offer</a>
+      </div>
+      <div class="callout">
+        <strong>What happens next:</strong>
+        <ul class="list">
+          <li>Visitor clicks <em>Run The FRESH Check</em></li>
+          <li>They land on the offer page</li>
+          <li>They pay, then book the discovery call</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
