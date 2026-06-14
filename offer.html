@@ -3,161 +3,301 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pimp My Website™ Offer</title>
+<title>Website Glow-Up · Pimp My Website™</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
 :root{
-  --bg:#0e0d0b;
-  --card:#171614;
-  --card2:#201f1d;
-  --ink:#080706;
-  --cream:#e6e1d4;
-  --cream-dim:#b4b1a8;
-  --cream-hi:#f2eee3;
+  --bg:#0b0b0b;
+  --panel:#131313;
+  --panel-2:#191919;
+  --ink:#050505;
+  --cream:#ece7dc;
+  --cream-dim:#b9b2a6;
+  --cream-hi:#fffaf0;
   --red:#db3330;
-  --red-dark:#b2201d;
-  --gold:#cca641;
+  --red-dark:#b62320;
+  --gold:#caa24a;
+  --line:rgba(236,231,220,.14);
 }
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%}
 body{
   background:
-    radial-gradient(circle at top, rgba(204,166,65,.12), transparent 34%),
-    radial-gradient(circle at 80% 20%, rgba(219,51,48,.12), transparent 28%),
-    var(--bg);
+    radial-gradient(circle at top, rgba(202,162,74,.14), transparent 30%),
+    radial-gradient(circle at 85% 20%, rgba(219,51,48,.12), transparent 24%),
+    linear-gradient(180deg, #101010 0%, var(--bg) 46%);
   color:var(--cream);
   font-family:'Inter',system-ui,sans-serif;
-  line-height:1.55;
+  line-height:1.65;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:1100px;margin:0 auto;padding:48px 20px 72px}
-.eyebrow{font-family:'Permanent Marker',cursive;color:var(--gold);margin:0 0 14px}
-.display{font-family:'Anton',Impact,sans-serif;text-transform:uppercase;line-height:1;letter-spacing:.01em;margin:0}
-.grid{display:grid;gap:20px}
-@media(min-width:900px){.grid{grid-template-columns:1.1fr .9fr}}
-.hero,.panel{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)), var(--card);border:1px solid rgba(230,225,212,.14);box-shadow:8px 8px 0 var(--ink)}
-.hero{padding:34px}
-.panel{padding:26px}
-.price{
-  display:inline-block;
-  background:var(--red);
-  color:var(--cream-hi);
-  border:2px solid var(--ink);
-  box-shadow:5px 5px 0 var(--ink);
-  padding:12px 18px;
-  font-family:'Anton',Impact,sans-serif;
-  letter-spacing:.04em;
-  text-transform:uppercase;
+.wrap{max-width:1080px;margin:0 auto;padding:20px 20px 88px}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  padding:18px 0 28px;
 }
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  cursor:pointer;
-  background:var(--red);
-  color:var(--cream-hi);
-  border:2px solid var(--ink);
-  box-shadow:5px 5px 0 var(--ink);
-  padding:16px 24px;
-  font-family:'Anton',Impact,sans-serif;
-  text-transform:uppercase;
-  letter-spacing:.05em;
-  transition:transform .12s,box-shadow .12s,background .12s;
+.brand{
+  font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:13px;color:var(--cream-dim);
 }
-.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink);background:var(--red-dark)}
-.btn.secondary{background:transparent;color:var(--cream)}
-.btn.secondary:hover{background:transparent}
-.muted{color:var(--cream-dim)}
-.list{padding-left:18px;margin:18px 0 0}
-.list li{margin:10px 0}
-.callout{background:var(--card2);border-left:4px solid var(--gold);padding:18px 20px;margin-top:22px}
-.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:24px}
-.small{font-size:14px}
-h1.hero{font-size:clamp(44px,8vw,78px);margin:18px 0 18px}
-p{font-size:18px}
 .back-link{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  color:var(--cream-dim);
-  text-decoration:none;
-  font-weight:700;
-  font-size:14px;
-  letter-spacing:.04em;
-  text-transform:uppercase;
-  margin-bottom:18px;
+  color:var(--cream-dim);text-decoration:none;font-weight:700;font-size:13px;
+  letter-spacing:.08em;text-transform:uppercase;
 }
 .back-link:hover{color:var(--cream);text-decoration:underline}
-.embed{
-  margin-top:16px;
-  background:rgba(255,255,255,.03);
-  border:1px solid rgba(230,225,212,.12);
-  padding:14px;
+.eyebrow{
+  margin:0 0 14px;
+  color:var(--gold);
+  font-size:14px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:800;
 }
-.section{margin-top:28px}
+.display{
+  font-family:'Anton',Impact,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.01em;
+  line-height:.96;
+  margin:0;
+}
+.hero{
+  border:1px solid var(--line);
+  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)), rgba(19,19,19,.92);
+  box-shadow:10px 10px 0 var(--ink);
+  padding:34px 22px 28px;
+}
+.hero h1{font-size:clamp(44px,10vw,82px);max-width:11ch}
+.hero p{font-size:18px;max-width:58ch;margin:18px 0 0}
+.callout{
+  margin-top:24px;
+  border-left:4px solid var(--gold);
+  background:rgba(255,255,255,.03);
+  padding:18px 18px 18px 20px;
+}
+.callout strong{display:block;font-size:14px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+.pill{
+  display:inline-flex;align-items:center;
+  padding:10px 14px;
+  background:rgba(202,162,74,.11);
+  color:var(--gold);
+  border:1px solid rgba(202,162,74,.22);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.grid{
+  display:grid;
+  gap:18px;
+  margin-top:22px;
+}
+.section{
+  border:1px solid var(--line);
+  background:linear-gradient(180deg, rgba(255,255,255,.025), rgba(255,255,255,0)), var(--panel);
+  box-shadow:8px 8px 0 var(--ink);
+  padding:24px 20px;
+}
+.section.alt{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)), var(--panel-2)}
+.section h2{
+  font-family:'Anton',Impact,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.01em;
+  font-size:clamp(28px,5vw,46px);
+  line-height:1;
+  margin:0 0 14px;
+}
+.section p{margin:0 0 14px;font-size:17px}
+.lead{font-size:18px}
+.list{
+  margin:14px 0 0;
+  padding-left:20px;
+}
+.list li{margin:10px 0;padding-left:2px}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:22px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  text-decoration:none;cursor:pointer;
+  background:var(--red);color:var(--cream-hi);
+  border:2px solid var(--ink);
+  box-shadow:6px 6px 0 var(--ink);
+  padding:16px 24px;
+  font-family:'Anton',Impact,sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  transition:transform .12s,box-shadow .12s,background .12s;
+}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink);background:var(--red-dark)}
+.btn.secondary{background:transparent;color:var(--cream)}
+.btn.secondary:hover{background:transparent}
+.meta{
+  margin-top:12px;
+  color:var(--cream-dim);
+  font-size:14px;
+}
+.price-box{
+  display:grid;
+  gap:8px;
+  padding:20px;
+  border:1px solid rgba(236,231,220,.16);
+  background:rgba(255,255,255,.03);
+}
+.price{
+  font-family:'Anton',Impact,sans-serif;
+  font-size:42px;
+  line-height:1;
+  margin:0;
+}
+.availability{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-top:2px;
+  color:var(--gold);
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-size:12px;
+}
+.divider{
+  height:1px;
+  background:var(--line);
+  margin:26px 0;
+}
+.embed{
+  margin-top:20px;
+  border:1px solid rgba(236,231,220,.12);
+  background:rgba(255,255,255,.03);
+  padding:12px;
+}
+iframe{display:block;width:100%;border:none;overflow:hidden;min-height:760px}
+.note{
+  color:var(--cream-dim);
+  font-size:14px;
+  margin-top:10px;
+}
+@media(min-width:860px){
+  .hero{padding:44px 38px 34px}
+  .section{padding:30px 28px}
+}
 </style>
 </head>
 <body>
   <main class="wrap">
-    <a class="back-link" href="/" id="backToResults">← Back to results</a>
-    <div class="grid">
-      <section class="hero">
-        <p class="eyebrow">DAY1044 Solutions™ · Pimp My Website™</p>
-        <span class="price">One page. One week. $300.</span>
-        <h1 class="display hero">Look like a $3,000 website. For a fraction of the cost.</h1>
-        <p style="max-width:60ch">
-          Your assessment showed what your site is missing. This is the fix: one clean page with big presence, major impact, and one clear next step.
-        </p>
-        <div class="callout">
-          <strong>Based on your FRESH results:</strong>
-          <ol class="list">
-            <li>Fast. Responsive. Engaging. Strategic. Hip.</li>
-            <li>One page. Maximum impact.</li>
-            <li>Launch ready in days, not months.</li>
-          </ol>
-        </div>
-        <div class="section">
-          <p class="eyebrow">Get my $300 page</p>
-          <p><strong>The Product</strong> · a complete one-page website</p>
-          <div class="row">
-            <a class="btn" href="https://buy.stripe.com/00wdR8eMTeXOaP7fwV5os02" target="_blank" rel="noopener noreferrer">Pay Website Offer</a>
-          </div>
-          <div class="embed">
-            <iframe src="https://api.growthhub365.com/widget/booking/lpUP2Dq5oAuxq58CCsRM" style="width:100%;border:none;overflow:hidden;min-height:760px" scrolling="no" id="lpUP2Dq5oAuxq58CCsRM_1781418875430"></iframe>
-            <br />
-          </div>
-        </div>
+    <div class="topbar">
+      <div class="brand">Pimp My Website™</div>
+      <a class="back-link" href="/" id="backToResults">← Back to results</a>
+    </div>
 
-        <div class="section">
-          <p class="eyebrow">Add-On</p>
-          <p><strong>Fresh Website Audit</strong></p>
-          <p class="small muted" style="margin-top:-4px">Already have a site? Get the quick read before you rebuild.</p>
-          <div class="row">
-            <a class="btn" href="https://buy.stripe.com/eVq14mbAH02Ug9racB5os03" target="_blank" rel="noopener noreferrer">Pay Audit Fee</a>
+    <section class="hero">
+      <p class="eyebrow">Website Glow-Up</p>
+      <span class="pill">Founding Client Offer: 5 spots only</span>
+      <h1 class="display" style="margin-top:18px">Your Business Has Outgrown Your Website</h1>
+      <p class="lead">
+        You do not need a $5,000 agency redesign. You need a clear, professional one-page website that helps visitors understand what you do, trust your business, and take action.
+      </p>
+      <div class="callout">
+        <strong>Based on your FRESH™ Check results</strong>
+        <p>Your assessment showed where the friction is. This page is the fix.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn" href="https://buy.stripe.com/00wdR8eMTeXOaP7fwV5os02" target="_blank" rel="noopener noreferrer">Reserve My $300 Spot</a>
+      </div>
+      <p class="meta">Payment reserves your founding client spot before booking.</p>
+    </section>
+
+    <div class="grid">
+      <section class="section">
+        <h2>Diagnosis Continuation</h2>
+        <p class="lead">You took the FRESH™ Check. Now let’s fix what is holding your website back.</p>
+        <p>Most small business websites do not have a design problem. They have a clarity problem. Visitors should immediately understand what you do, who you help, and what to do next.</p>
+      </section>
+
+      <section class="section alt">
+        <h2>What’s Included</h2>
+        <p>Everything you need. Nothing you don’t.</p>
+        <ul class="list">
+          <li>Professional one-page website</li>
+          <li>Mobile-first design</li>
+          <li>Strategic messaging guidance</li>
+          <li>Contact form setup</li>
+          <li>Social media links</li>
+          <li>Basic SEO setup</li>
+          <li>Custom branded design</li>
+          <li>Delivery in a few days</li>
+          <li>Two revision rounds</li>
+          <li>Domain connection assistance if needed</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>What’s Not Included</h2>
+        <p class="lead">Clear scope. No mystery meat.</p>
+        <p>
+          This $300 founding client offer does not include CRM setup, complex automation, ecommerce, custom software, advanced integrations, or multi-page websites. Those can be quoted separately if needed.
+        </p>
+      </section>
+
+      <section class="section alt">
+        <h2>Founding Client Investment</h2>
+        <div class="price-box">
+          <p class="price">$300</p>
+          <div class="availability">5 of 5 founding client spots currently available</div>
+        </div>
+        <p style="margin-top:18px">
+          I am accepting only 5 businesses at this introductory rate while launching this streamlined Website Glow-Up process. Future pricing will increase after these first five projects are completed.
+        </p>
+        <div class="btn-row">
+          <a class="btn" href="https://buy.stripe.com/00wdR8eMTeXOaP7fwV5os02" target="_blank" rel="noopener noreferrer">Reserve My $300 Spot</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Is This For You</h2>
+        <div class="grid" style="grid-template-columns:1fr;gap:18px;margin-top:8px">
+          <div>
+            <p><strong>Perfect if:</strong></p>
+            <ul class="list">
+              <li>Your current website feels outdated</li>
+              <li>You need a professional online presence quickly</li>
+              <li>You are launching a new offer or business</li>
+              <li>You want your business to look more polished</li>
+              <li>You need a one-page site that clearly communicates your value</li>
+            </ul>
           </div>
-          <div class="embed">
-            <iframe src="https://api.growthhub365.com/widget/booking/eRkXERm9PN3GOy5iVbWB" style="width:100%;border:none;overflow:hidden;min-height:760px" scrolling="no" id="eRkXERm9PN3GOy5iVbWB_1781418793712"></iframe>
-            <br />
+          <div>
+            <p><strong>Not a fit if:</strong></p>
+            <ul class="list">
+              <li>You need a large multi-page website</li>
+              <li>You need CRM implementation</li>
+              <li>You need custom software</li>
+              <li>You need daily website updates</li>
+              <li>You are not ready to provide content, photos, or business details</li>
+            </ul>
           </div>
         </div>
       </section>
-      <aside class="panel">
-        <p class="eyebrow">What’s included</p>
-        <ul class="list">
-          <li>Fast turnaround and a streamlined process</li>
-          <li>Responsive design that works on desktop, tablet, and mobile</li>
-          <li>Strategic layout built to drive action</li>
-          <li>Professional copy guidance if you need it</li>
-          <li>No monthly contract</li>
-        </ul>
-        <div class="callout">
-          <strong>Scattered to sharp:</strong>
-          <p class="small muted" style="margin:10px 0 0">
-            Your FRESH score points the way. This is the next step.
-          </p>
+
+      <section class="section alt">
+        <h2>Reserve Your Spot</h2>
+        <p class="lead">Payment reserves your founding client spot. After payment, you will be directed to book your Website Glow-Up Strategy Call.</p>
+        <div class="btn-row">
+          <a class="btn" href="https://buy.stripe.com/00wdR8eMTeXOaP7fwV5os02" target="_blank" rel="noopener noreferrer">Pay $300 and Book My Call</a>
         </div>
-      </aside>
+        <div class="embed">
+          <iframe src="https://api.growthhub365.com/widget/booking/lpUP2Dq5oAuxq58CCsRM" id="lpUP2Dq5oAuxq58CCsRM_1781418875430" scrolling="no" title="Website Glow-Up Strategy Call"></iframe>
+          <div class="note">After payment, use the calendar to reserve your Website Glow-Up Strategy Call.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Look Like a $3,000 Website. Pay $300.</h2>
+        <p class="lead">If your website is not matching the level of your business, this is your chance to fix it without overcomplicating the process.</p>
+        <div class="btn-row">
+          <a class="btn" href="https://buy.stripe.com/00wdR8eMTeXOaP7fwV5os02" target="_blank" rel="noopener noreferrer">Reserve My $300 Spot</a>
+        </div>
+      </section>
     </div>
   </main>
   <script src="https://api.growthhub365.com/js/form_embed.js" type="text/javascript"></script>
